@@ -1,0 +1,359 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    border: 1px solid #555;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+
+/* TOP */
+
+.top {
+    height: 65px;
+    display: flex;
+    background-color: #f4b183;
+    border-bottom: 1px solid #555;
+}
+
+
+/* LOGO */
+
+.logo {
+    width: 120px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #555;
+    overflow: hidden;
+}
+
+.logo img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+}
+
+
+/* COLLEGE NAME */
+
+.college {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* NAVIGATION */
+
+.navigation {
+    height: 40px;
+    display: flex;
+    border-bottom: 1px solid #555;
+    background-color: #fff2e2;
+}
+
+.navigation a {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    text-decoration: none;
+    border-right: 1px solid #999;
+}
+
+.navigation a:hover {
+    background-color: #e0e0e0;
+}
+
+.navigation a.selected {
+    background-color: #d3d3d3;
+    color: #333;
+}
+
+
+/* MAIN */
+
+.main {
+    display: flex;
+    min-height: calc(100vh - 106px);
+}
+
+
+/* LEFT */
+
+.left {
+    width: 120px;
+    background-color: #fff2e2;
+    border-right: 1px solid #555;
+    flex-shrink: 0;
+}
+
+.left a {
+    display: block;
+    padding: 12px 10px;
+    color: black;
+    text-decoration: none;
+    border-bottom: 1px solid #ddd;
+}
+
+.left a:hover {
+    background-color: #e0e0e0;
+}
+
+.left a.selected {
+    background-color: #d3d3d3;
+    color: #333;
+}
+
+
+/* RIGHT */
+
+.right {
+    flex: 1;
+    background-color: white;
+    text-align: center;
+    padding: 30px 25px;
+}
+
+
+/* PAGES */
+
+.page {
+    display: none;
+}
+
+.page.active-page {
+    display: block;
+}
+
+.page h2 {
+    color: #4f6d7a;
+    font-size: 20px;
+}
+
+.page p {
+    font-size: 16px;
+    color: #444;
+}
+
+
+/* LOGIN FORM */
+
+.form-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 12px;
+}
+
+.form-row label {
+    width: 110px;
+    text-align: left;
+}
+
+.form-row input {
+    width: 125px;
+    height: 16px;
+    border: 3px solid black;
+}
+
+
+/* =========================
+   REGISTRATION FORM
+   ========================= */
+
+.register-row {
+    display: flex;
+    align-items: center;
+    margin: 12px auto;
+    width: 600px;
+}
+
+.register-row > label {
+    width: 150px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.register-row > input[type="text"],
+.register-row > input[type="password"] {
+    width: 250px;
+    height: 22px;
+    border: 1px solid #555;
+}
+
+
+/* RADIO BUTTONS */
+
+.radio-group {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+
+/* DATE OF BIRTH */
+
+.dob {
+    display: flex;
+    gap: 8px;
+}
+
+.dob select {
+    padding: 5px;
+    border: 1px solid #555;
+}
+
+
+/* LANGUAGES */
+
+.language-group {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+
+/* ADDRESS */
+
+.address-row {
+    align-items: flex-start;
+}
+
+.address-row textarea {
+    width: 250px;
+    height: 80px;
+    border: 1px solid #555;
+    resize: none;
+}
+
+
+/* REGISTRATION BUTTONS */
+
+.register-buttons {
+    margin-top: 25px;
+}
+
+.register-buttons input {
+    padding: 8px 18px;
+    margin: 8px;
+    background-color: white;
+    border: 1px solid #555;
+    font-size: 15px;
+}
+
+.register-buttons input[type="submit"] {
+    background-color: #4f6d7a;
+    color: white;
+}
+
+
+/* =========================
+   CATALOGUE
+   ========================= */
+
+.catalogue-table {
+    width: 95%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+.catalogue-table th {
+    background-color: #4f6d7a;
+    color: white;
+    padding: 10px;
+    border: 1px solid #555;
+}
+
+.catalogue-table td {
+    padding: 12px;
+    border: 1px solid #555;
+    text-align: center;
+}
+
+
+/* BOOK */
+
+.book {
+    width: 80px;
+    height: 110px;
+    margin: auto;
+    border: 4px solid #4f6d7a;
+    box-shadow: 3px 3px 5px #999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.book-one {
+    background-color: #f4b183;
+}
+
+.book-two {
+    background-color: #7b9e87;
+}
+
+.book-title {
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.4;
+}
+
+
+/* ADD TO CART */
+
+.catalogue-table button {
+    padding: 8px 12px;
+    background-color: #4f6d7a;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.catalogue-table button:hover {
+    background-color: #f4b183;
+    color: black;
+}
+
+
+/* =========================
+   CART
+   ========================= */
+
+.cart-table {
+    width: 95%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+.cart-table th {
+    background-color: #4f6d7a;
+    color: white;
+    padding: 10px;
+    border: 1px solid #555;
+}
+
+.cart-table td {
+    padding: 12px;
+    border: 1px solid #555;
+    text-align: center;
+}
+
+.total-row {
+    background-color: #f4b183;
+}
+
+.total-row td {
+    padding: 12px;
+}

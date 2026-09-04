@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- HEADER -->
+    <div class="header">
+
+        <div>
+            <p class="eyebrow">PERSONAL PRODUCTIVITY</p>
+            <h1>Task <span>Manager</span></h1>
+            <p class="subtitle">Stay organized. Get things done.</p>
+        </div>
+
+        <div class="today-box">
+            <strong>Today</strong>
+            <span id="todayDate"></span>
+        </div>
+
+    </div>
+
+
+    <!-- ADD TASK AREA -->
+    <div class="add-area">
+
+        <div class="task-input-box">
+            <span class="plus-icon">+</span>
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="What needs to be done?"
+                autocomplete="off"
+            >
+        </div>
+
+        <div class="calendar-box">
+            <span class="calendar-icon">📅</span>
+            <input
+                type="date"
+                id="deadlineInput"
+            >
+        </div>
+
+        <button
+            type="button"
+            class="add-button"
+            id="addButton"
+        >
+            Add Task
+        </button>
+
+    </div>
+
+
+    <!-- PROGRESS -->
+    <div class="progress-section">
+
+        <div class="progress-header">
+            <span>Progress</span>
+            <strong id="progressText">0 of 0 completed</strong>
+        </div>
+
+        <div class="progress-background">
+            <div
+                class="progress-fill"
+                id="progressBar"
+            ></div>
+        </div>
+
+    </div>
+
+
+    <!-- TASK LIST -->
+    <div class="task-list" id="taskList"></div>
+
+
+    <!-- EMPTY STATE -->
+    <div class="empty-state" id="emptyState">
+
+        <div class="empty-circle">✓</div>
+
+        <h3>No tasks yet</h3>
+
+        <p>
+            Add a task above to get started.
+        </p>
+
+    </div>
+
+
+    <!-- FOOTER -->
+    <div class="footer">
+
+        <span id="taskCount">0 tasks</span>
+
+        <span>
+            Your tasks are saved automatically
+        </span>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

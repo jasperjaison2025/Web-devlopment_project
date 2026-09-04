@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>G.L. Bajaj Book Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Top Section -->
+    <div class="top">
+
+        <div class="logo">
+            <img src="college logo.jpg" alt="College Logo">
+        </div>
+
+        <div class="college">
+            G.L. BAJAJ BOOK STORE
+        </div>
+
+    </div>
+
+
+    <!-- Navigation Section -->
+    <div class="navigation">
+
+        <a href="#" class="nav-link active" onclick="showPage('home', this)">
+            Home
+        </a>
+
+        <a href="#" class="nav-link" onclick="showPage('login', this)">
+            Login
+        </a>
+
+        <a href="#" class="nav-link" onclick="showPage('registration', this)">
+            Registration
+        </a>
+
+        <a href="#" class="nav-link" onclick="showPage('catalogue', this)">
+            Catalogue
+        </a>
+
+        <a href="#" class="nav-link" onclick="showPage('cart', this)">
+            Cart
+        </a>
+
+    </div>
+
+
+    <!-- Main Section -->
+    <div class="main">
+
+        <!-- Left Department Section -->
+        <div class="left">
+
+            <a href="#" class="department-link"
+               onclick="showPage('cse', this)">
+                CSE
+            </a>
+
+            <a href="#" class="department-link"
+               onclick="showPage('ece', this)">
+                ECE
+            </a>
+
+            <a href="#" class="department-link"
+               onclick="showPage('eee', this)">
+                EEE
+            </a>
+
+            <a href="#" class="department-link"
+               onclick="showPage('civil', this)">
+                CIVIL
+            </a>
+
+        </div>
+
+
+        <!-- Right Section -->
+        <div class="right">
+
+            <!-- Home -->
+            <div id="home" class="page active-page">
+
+                <h2>Welcome to G.L. BAJAJ BOOK STORE</h2>
+
+                <p>
+                    Welcome to our online bookstore.
+                </p>
+
+                <p>
+                    Books are available for different departments.
+                </p>
+
+                <p>
+                    Select a department or option from the menu
+                    to continue.
+                </p>
+
+            </div>
+
+
+            <!-- Login -->
+            <div id="login" class="page">
+
+                <h2>Login Page</h2>
+
+                <form>
+
+                    <div class="form-row">
+                        <label>User Name:</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="form-row">
+                        <label>Password:</label>
+                        <input type="password">
+                    </div>
+
+                    <div class="buttons">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </div>
+
+                </form>
+
+            </div>
+
+
+            <!-- Registration -->
+            <div id="registration" class="page">
+
+                <h2>Registration Page</h2>
+
+                <p>
+                    Registration form will be displayed here.
+                </p>
+
+            </div>
+
+
+            <!-- Catalogue -->
+            <div id="catalogue" class="page">
+
+                <h2>Catalogue</h2>
+
+                <p>
+                    Select a department from the left side
+                    to view the catalogue.
+                </p>
+
+            </div>
+
+
+            <!-- Cart -->
+            <div id="cart" class="page">
+
+                <h2>Shopping Cart</h2>
+
+                <p>
+                    Your cart is currently empty.
+                </p>
+
+            </div>
+
+
+            <!-- CSE -->
+            <div id="cse" class="page">
+
+                <h2>CSE Catalogue</h2>
+
+                <p>
+                    CSE category selected.
+                </p>
+
+            </div>
+
+
+            <!-- ECE -->
+            <div id="ece" class="page">
+
+                <h2>ECE Catalogue</h2>
+
+                <p>
+                    ECE category selected.
+                </p>
+
+            </div>
+
+
+            <!-- EEE -->
+            <div id="eee" class="page">
+
+                <h2>EEE Catalogue</h2>
+
+                <p>
+                    EEE category selected.
+                </p>
+
+            </div>
+
+
+            <!-- CIVIL -->
+            <div id="civil" class="page">
+
+                <h2>CIVIL Catalogue</h2>
+
+                <p>
+                    CIVIL category selected.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- JavaScript -->
+    <script>
+
+        function showPage(pageId, clickedLink) {
+
+            // Hide all pages
+            let pages = document.querySelectorAll(".page");
+
+            pages.forEach(function(page) {
+                page.classList.remove("active-page");
+            });
+
+
+            // Show selected page
+            document.getElementById(pageId).classList.add("active-page");
+
+
+            // Remove selected color from all navigation links
+            let links = document.querySelectorAll(".nav-link, .department-link");
+
+            links.forEach(function(link) {
+                link.classList.remove("selected");
+            });
+
+
+            // Add selected color to clicked link
+            clickedLink.classList.add("selected");
+        }
+
+    </script>
+
+</body>
+</html>

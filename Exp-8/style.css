@@ -1,0 +1,674 @@
+/* ================================
+   BODY
+   ================================ */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    min-height: 100vh;
+    border: 1px solid #555;
+    box-sizing: border-box;
+}
+
+
+/* ================================
+   TOP SECTION
+   ================================ */
+
+.top {
+    height: 70px;
+    display: flex;
+
+    background-color: #4f6d7a;
+    border-bottom: 1px solid #555;
+}
+
+
+/* ================================
+   LOGO
+   ================================ */
+
+.logo {
+    width: 120px;
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #ffe5cc;
+    border-right: 1px solid #555;
+
+    overflow: hidden;
+}
+
+.logo img {
+    width: 58px;
+    height: 58px;
+    object-fit: contain;
+}
+
+
+/* ================================
+   COLLEGE / BOOK STORE NAME
+   ================================ */
+
+.college {
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: Georgia, serif;
+    font-size: 24px;
+    font-weight: bold;
+
+    /* WHITE TEXT */
+    color: white;
+
+    letter-spacing: 2px;
+
+    /*
+       Very light background image
+       so text is clearly visible.
+    */
+
+    background-image:
+        linear-gradient(
+            rgba(79, 109, 122, 0.94),
+            rgba(79, 109, 122, 0.94)
+        ),
+        url("book-background.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* ================================
+   NAVIGATION
+   ================================ */
+
+.navigation {
+    height: 45px;
+
+    display: flex;
+
+    background-color: #fff2e2;
+
+    border-bottom: 1px solid #555;
+}
+
+.navigation a {
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+
+    text-decoration: none;
+
+    border-right: 1px solid #999;
+}
+
+
+/* Normal link */
+
+.navigation a:link {
+    color: #222;
+}
+
+
+/* Visited link */
+
+.navigation a:visited {
+    color: #222;
+}
+
+
+/* Mouse over */
+
+.navigation a:hover {
+    background-color: #4f6d7a;
+    color: white;
+}
+
+
+/* While clicking */
+
+.navigation a:active {
+    background-color: #4f6d7a;
+    color: white;
+}
+
+
+/* SELECTED PAGE */
+
+.navigation a.selected {
+    background-color: #4f6d7a !important;
+    color: white !important;
+}
+
+
+/* ================================
+   MAIN AREA
+   ================================ */
+
+.main {
+    display: flex;
+
+    min-height: calc(100vh - 116px);
+}
+
+
+/* ================================
+   LEFT DEPARTMENT AREA
+   ================================ */
+
+.left {
+    width: 150px;
+
+    flex-shrink: 0;
+
+    background-color: rgba(255, 242, 226, 0.98);
+
+    border-right: 1px solid #555;
+}
+
+
+/* ================================
+   DEPARTMENT HEADING
+   ================================ */
+
+.left h3 {
+    margin: 0;
+    padding: 15px 5px;
+
+    text-align: center;
+
+    font-family: Georgia, serif;
+    font-size: 17px;
+
+    color: white;
+
+    background-color: #4f6d7a;
+
+    /*
+       Very faint image.
+    */
+
+    background-image:
+        linear-gradient(
+            rgba(79, 109, 122, 0.95),
+            rgba(79, 109, 122, 0.95)
+        ),
+        url("book-background.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border-bottom: 1px solid #555;
+}
+
+
+/* ================================
+   DEPARTMENT LINKS
+   ================================ */
+
+.left a {
+    display: block;
+
+    padding: 14px 10px;
+
+    text-align: center;
+
+    font-size: 15px;
+
+    text-decoration: none;
+
+    border-bottom: 1px solid #ddd;
+}
+
+
+/* Normal */
+
+.left a:link {
+    color: #333;
+}
+
+
+/* Visited */
+
+.left a:visited {
+    color: #333;
+}
+
+
+/* Hover */
+
+.left a:hover {
+    background-color: #4f6d7a;
+    color: white;
+}
+
+
+/* Active */
+
+.left a:active {
+    background-color: #4f6d7a;
+    color: white;
+}
+
+
+/* SELECTED DEPARTMENT */
+
+.left a.selected {
+    background-color: #4f6d7a !important;
+    color: white !important;
+
+    font-weight: bold;
+}
+
+
+/* ================================
+   RIGHT CONTENT AREA
+   ================================ */
+
+.right {
+    flex: 1;
+
+    padding: 40px 30px;
+
+    text-align: center;
+
+    background-color: rgba(255, 255, 255, 0.97);
+}
+
+
+/* ================================
+   PAGES
+   ================================ */
+
+.page {
+    display: none;
+}
+
+.page.active-page {
+    display: block;
+}
+
+
+/* ================================
+   PAGE HEADING
+   ================================ */
+
+.page h2 {
+    padding: 15px;
+
+    font-family: Georgia, serif;
+
+    font-size: 26px;
+
+    font-style: italic;
+
+    color: #4f6d7a;
+
+    background-image:
+        linear-gradient(
+            rgba(255, 255, 255, 0.94),
+            rgba(255, 255, 255, 0.94)
+        ),
+        url("book-background.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border: 1px solid #ccc;
+
+    border-radius: 5px;
+}
+
+
+/* ================================
+   PAGE PARAGRAPHS
+   ================================ */
+
+.page p {
+    font-family: Arial, sans-serif;
+
+    font-size: 17px;
+
+    line-height: 1.6;
+
+    color: #444;
+}
+
+
+/* ================================
+   LOGIN FORM
+   ================================ */
+
+.form-row {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    margin: 15px;
+}
+
+.form-row label {
+    width: 110px;
+
+    text-align: left;
+
+    font-weight: bold;
+}
+
+.form-row input {
+    width: 180px;
+
+    height: 22px;
+
+    border: 1px solid #555;
+}
+
+
+/* Login buttons */
+
+.login-buttons {
+    margin-top: 20px;
+}
+
+.login-buttons input {
+    padding: 8px 18px;
+
+    margin: 5px;
+
+    background-color: #4f6d7a;
+
+    color: white;
+
+    border: 1px solid #555;
+
+    cursor: pointer;
+}
+
+.login-buttons input:hover {
+    background-color: #f4b183;
+
+    color: black;
+}
+
+
+/* ================================
+   REGISTRATION FORM
+   ================================ */
+
+.register-row {
+    display: flex;
+
+    align-items: center;
+
+    width: 600px;
+
+    margin: 12px auto;
+}
+
+.register-row > label {
+    width: 150px;
+
+    text-align: left;
+
+    font-weight: bold;
+}
+
+.register-row > input[type="text"],
+.register-row > input[type="password"] {
+    width: 250px;
+
+    height: 22px;
+
+    border: 1px solid #555;
+}
+
+
+/* Radio buttons */
+
+.radio-group {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+
+/* Date of birth */
+
+.dob {
+    display: flex;
+    gap: 8px;
+}
+
+.dob select {
+    padding: 5px;
+
+    border: 1px solid #555;
+}
+
+
+/* Languages */
+
+.language-group {
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+
+    flex-wrap: wrap;
+}
+
+
+/* Address */
+
+.address-row {
+    align-items: flex-start;
+}
+
+.address-row textarea {
+    width: 250px;
+
+    height: 80px;
+
+    border: 1px solid #555;
+
+    resize: none;
+}
+
+
+/* Registration buttons */
+
+.register-buttons {
+    margin-top: 25px;
+}
+
+.register-buttons input {
+    padding: 8px 18px;
+
+    margin: 8px;
+
+    background-color: white;
+
+    border: 1px solid #555;
+
+    cursor: pointer;
+}
+
+.register-buttons input[type="submit"] {
+    background-color: #4f6d7a;
+
+    color: white;
+}
+
+.register-buttons input:hover {
+    background-color: #f4b183;
+
+    color: black;
+}
+
+
+/* ================================
+   CATALOGUE TABLE
+   ================================ */
+
+.catalogue-table {
+    width: 95%;
+
+    margin: 20px auto;
+
+    border-collapse: collapse;
+
+    background-color: white;
+}
+
+.catalogue-table th {
+    padding: 12px;
+
+    background-color: #4f6d7a;
+
+    color: white;
+
+    border: 1px solid #555;
+}
+
+.catalogue-table td {
+    padding: 12px;
+
+    text-align: center;
+
+    border: 1px solid #555;
+}
+
+
+/* ================================
+   BOOK DESIGN
+   ================================ */
+
+.book {
+    width: 80px;
+    height: 110px;
+
+    margin: auto;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 4px solid #4f6d7a;
+
+    box-shadow: 3px 3px 5px #999;
+}
+
+.book-one {
+    background-color: #f4b183;
+}
+
+.book-two {
+    background-color: #7b9e87;
+}
+
+.book-title {
+    color: white;
+
+    font-family: Georgia, serif;
+
+    font-size: 10px;
+
+    font-weight: bold;
+
+    text-align: center;
+}
+
+
+/* ================================
+   ADD TO CART
+   ================================ */
+
+.catalogue-table button {
+    padding: 8px 12px;
+
+    background-color: #4f6d7a;
+
+    color: white;
+
+    border: none;
+
+    cursor: pointer;
+}
+
+.catalogue-table button:hover {
+    background-color: #f4b183;
+
+    color: black;
+}
+
+
+/* ================================
+   CART TABLE
+   ================================ */
+
+.cart-table {
+    width: 95%;
+
+    margin: 20px auto;
+
+    border-collapse: collapse;
+
+    background-color: white;
+}
+
+.cart-table th {
+    padding: 12px;
+
+    background-color: #4f6d7a;
+
+    color: white;
+
+    border: 1px solid #555;
+}
+
+.cart-table td {
+    padding: 12px;
+
+    text-align: center;
+
+    border: 1px solid #555;
+}
+
+
+/* Total */
+
+.total-row {
+    background-color: #f4b183;
+}
+
+.total-row td {
+    padding: 12px;
+}

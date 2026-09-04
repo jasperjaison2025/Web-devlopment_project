@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>G.L. Bajaj Book Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- TOP SECTION -->
+
+    <div class="top">
+
+        <div class="logo">
+            <img src="college logo.jpg" alt="College Logo">
+        </div>
+
+        <div class="college">
+            G.L. BAJAJ BOOK STORE
+        </div>
+
+    </div>
+
+
+    <!-- NAVIGATION -->
+
+    <div class="navigation">
+
+        <a href="#" class="nav-link selected"
+           onclick="showPage('home', this)">
+            Home
+        </a>
+
+        <a href="#" class="nav-link"
+           onclick="showPage('login', this)">
+            Login
+        </a>
+
+        <a href="#" class="nav-link"
+           onclick="showPage('registration', this)">
+            Registration
+        </a>
+
+        <a href="#" class="nav-link"
+           onclick="showPage('catalogue', this)">
+            Catalogue
+        </a>
+
+        <a href="#" class="nav-link"
+           onclick="showPage('cart', this)">
+            Cart
+        </a>
+
+    </div>
+
+
+    <!-- MAIN SECTION -->
+
+    <div class="main">
+
+        <!-- LEFT SECTION -->
+
+        <div class="left">
+
+            <a href="#" class="department-link"
+               onclick="showPage('cse', this)">
+                CSE
+            </a>
+
+            <a href="#" class="department-link"
+               onclick="showPage('ece', this)">
+                ECE
+            </a>
+
+            <a href="#" class="department-link"
+               onclick="showPage('eee', this)">
+                EEE
+            </a>
+
+            <a href="#" class="department-link"
+               onclick="showPage('civil', this)">
+                CIVIL
+            </a>
+
+        </div>
+
+
+        <!-- RIGHT SECTION -->
+
+        <div class="right">
+
+
+            <!-- HOME PAGE -->
+
+            <div id="home" class="page active-page">
+
+                <h2>Welcome to G.L. BAJAJ BOOK STORE</h2>
+
+                <p>
+                    Welcome to our online bookstore.
+                </p>
+
+                <p>
+                    Books are available for different departments.
+                </p>
+
+                <p>
+                    Select a department or option from the menu
+                    to continue.
+                </p>
+
+            </div>
+
+
+            <!-- LOGIN PAGE -->
+
+            <div id="login" class="page">
+
+                <h2>Login Page</h2>
+
+                <form>
+
+                    <div class="form-row">
+                        <label>User Name:</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="form-row">
+                        <label>Password:</label>
+                        <input type="password">
+                    </div>
+
+                    <div class="buttons">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </div>
+
+                </form>
+
+            </div>
+
+
+            <!-- REGISTRATION PAGE -->
+
+            <div id="registration" class="page">
+
+                <h2>Registration Page</h2>
+
+                <form>
+
+                    <div class="form-row">
+                        <label>User Name:</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="form-row">
+                        <label>Password:</label>
+                        <input type="password">
+                    </div>
+
+                    <div class="form-row">
+                        <label>Email:</label>
+                        <input type="email">
+                    </div>
+
+                    <div class="form-row">
+                        <label>Phone:</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="buttons">
+                        <input type="submit" value="Register">
+                        <input type="reset" value="Reset">
+                    </div>
+
+                </form>
+
+            </div>
+
+
+            <!-- CATALOGUE PAGE -->
+
+            <div id="catalogue" class="page">
+
+                <h2>Book Catalogue</h2>
+
+                <table class="catalogue-table">
+
+                    <tr>
+                        <th>Cover Page</th>
+                        <th>Author Name</th>
+                        <th>Publisher</th>
+                        <th>Price</th>
+                        <th>Add to Cart</th>
+                    </tr>
+
+
+                    <!-- BOOK 1 -->
+
+                    <tr>
+
+                        <td>
+
+                            <div class="book">
+
+                                <div class="book-title">
+                                    WEB DESIGN
+                                    <br>
+                                    HTML
+                                    <br>
+                                    CSS
+                                    <br>
+                                    JavaScript
+                                    <br>
+                                    jQuery
+                                </div>
+
+                            </div>
+
+                        </td>
+
+                        <td>
+                            Duckett, J.
+                        </td>
+
+                        <td>
+                            Wiley
+                        </td>
+
+                        <td>
+                            ₹650
+                        </td>
+
+                        <td>
+
+                            <button onclick="addToCart('Web Design with HTML, CSS, JavaScript and JQuery Set')">
+                                Add to Cart
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+
+                    <!-- BOOK 2 -->
+
+                    <tr>
+
+                        <td>
+
+                            <div class="book book-two">
+
+                                <div class="book-title">
+                                    START
+                                    <br>
+                                    PROGRAMMING
+                                    <br>
+                                    USING
+                                    <br>
+                                    HTML
+                                    <br>
+                                    CSS & JS
+                                </div>
+
+                            </div>
+
+                        </td>
+
+                        <td>
+                            Fajfar, I.
+                        </td>
+
+                        <td>
+                            CRC Press
+                        </td>
+
+                        <td>
+                            ₹550
+                        </td>
+
+                        <td>
+
+                            <button onclick="addToCart('Start Programming Using HTML, CSS, and JavaScript')">
+                                Add to Cart
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+                </table>
+
+            </div>
+
+
+            <!-- CART PAGE -->
+
+            <div id="cart" class="page">
+
+                <h2>Shopping Cart</h2>
+
+                <p>
+                    Your cart is currently empty.
+                </p>
+
+            </div>
+
+
+            <!-- CSE PAGE -->
+
+            <div id="cse" class="page">
+
+                <h2>CSE</h2>
+
+                <p>
+                    CSE category selected.
+                </p>
+
+            </div>
+
+
+            <!-- ECE PAGE -->
+
+            <div id="ece" class="page">
+
+                <h2>ECE</h2>
+
+                <p>
+                    ECE category selected.
+                </p>
+
+            </div>
+
+
+            <!-- EEE PAGE -->
+
+            <div id="eee" class="page">
+
+                <h2>EEE</h2>
+
+                <p>
+                    EEE category selected.
+                </p>
+
+            </div>
+
+
+            <!-- CIVIL PAGE -->
+
+            <div id="civil" class="page">
+
+                <h2>CIVIL</h2>
+
+                <p>
+                    CIVIL category selected.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+
+        function showPage(pageId, clickedLink) {
+
+            // Hide all pages
+
+            let pages = document.querySelectorAll(".page");
+
+            pages.forEach(function(page) {
+                page.classList.remove("active-page");
+            });
+
+
+            // Show selected page
+
+            document.getElementById(pageId)
+                .classList.add("active-page");
+
+
+            // Remove selected color from all links
+
+            let links = document.querySelectorAll(
+                ".nav-link, .department-link"
+            );
+
+            links.forEach(function(link) {
+                link.classList.remove("selected");
+            });
+
+
+            // Highlight selected link
+
+            clickedLink.classList.add("selected");
+
+        }
+
+
+        // Add book to cart
+
+        function addToCart(bookName) {
+
+            alert(bookName + " has been added to cart.");
+
+        }
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,1272 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>G.L. Bajaj Book Store</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         TOP SECTION
+         ========================= -->
+
+    <div class="top">
+
+        <div class="logo">
+
+            <img src="college logo.jpg"
+                 alt="College Logo">
+
+        </div>
+
+
+        <div class="college">
+
+            G.L. BAJAJ BOOK STORE
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =========================
+         NAVIGATION
+         ========================= -->
+
+    <div class="navigation">
+
+        <a href="#"
+           class="nav-link selected"
+           onclick="showPage('home', this)">
+
+            Home
+
+        </a>
+
+
+        <a href="#"
+           class="nav-link"
+           onclick="showPage('login', this)">
+
+            Login
+
+        </a>
+
+
+        <a href="#"
+           class="nav-link"
+           onclick="showPage('registration', this)">
+
+            Registration
+
+        </a>
+
+
+        <a href="#"
+           class="nav-link"
+           onclick="showPage('catalogue', this)">
+
+            Catalogue
+
+        </a>
+
+
+        <a href="#"
+           class="nav-link"
+           onclick="showPage('cart', this)">
+
+            Cart
+
+        </a>
+
+    </div>
+
+
+
+    <!-- =========================
+         MAIN SECTION
+         ========================= -->
+
+    <div class="main">
+
+
+        <!-- =========================
+             LEFT SECTION
+             ========================= -->
+
+        <div class="left">
+
+            <h3>
+                Departments
+            </h3>
+
+
+            <a href="#"
+               class="department-link"
+               onclick="showPage('cse', this)">
+
+                CSE
+
+            </a>
+
+
+            <a href="#"
+               class="department-link"
+               onclick="showPage('ece', this)">
+
+                ECE
+
+            </a>
+
+
+            <a href="#"
+               class="department-link"
+               onclick="showPage('eee', this)">
+
+                EEE
+
+            </a>
+
+
+            <a href="#"
+               class="department-link"
+               onclick="showPage('civil', this)">
+
+                CIVIL
+
+            </a>
+
+        </div>
+
+
+
+        <!-- =========================
+             RIGHT SECTION
+             ========================= -->
+
+        <div class="right">
+
+
+            <!-- =========================
+                 HOME PAGE
+                 ========================= -->
+
+            <div id="home"
+                 class="page active-page">
+
+                <h2>
+                    Welcome to G.L. BAJAJ BOOK STORE
+                </h2>
+
+
+                <p class="intro">
+
+                    Welcome to our online bookstore.
+
+                </p>
+
+
+                <p>
+
+                    Books are available for
+                    different departments.
+
+                </p>
+
+
+                <p>
+
+                    Select a department from
+                    the left side to view the
+                    available books.
+
+                </p>
+
+
+                <p class="special-text">
+
+                    Our bookstore provides
+                    academic books for students
+                    of different departments.
+
+                </p>
+
+            </div>
+
+
+
+            <!-- =========================
+                 LOGIN PAGE
+                 ========================= -->
+
+            <div id="login"
+                 class="page">
+
+                <h2>
+                    Login Page
+                </h2>
+
+
+                <form>
+
+
+                    <div class="form-row">
+
+                        <label>
+                            User Name:
+                        </label>
+
+
+                        <input type="text">
+
+                    </div>
+
+
+
+                    <div class="form-row">
+
+                        <label>
+                            Password:
+                        </label>
+
+
+                        <input type="password">
+
+                    </div>
+
+
+
+                    <div class="login-buttons">
+
+                        <input type="submit"
+                               value="Submit">
+
+
+                        <input type="reset"
+                               value="Reset">
+
+                    </div>
+
+
+                </form>
+
+            </div>
+
+
+
+            <!-- =========================
+                 REGISTRATION PAGE
+                 ========================= -->
+
+            <div id="registration"
+                 class="page">
+
+                <h2>
+                    Registration Form
+                </h2>
+
+
+                <form onsubmit="return validateForm()">
+
+
+                    <!-- NAME -->
+
+                    <div class="register-row">
+
+                        <label>
+                            Name:
+                        </label>
+
+
+                        <input type="text"
+                               id="name">
+
+                    </div>
+
+
+
+                    <!-- PASSWORD -->
+
+                    <div class="register-row">
+
+                        <label>
+                            Password:
+                        </label>
+
+
+                        <input type="password"
+                               id="password">
+
+                    </div>
+
+
+
+                    <!-- EMAIL -->
+
+                    <div class="register-row">
+
+                        <label>
+                            E-mail ID:
+                        </label>
+
+
+                        <input type="text"
+                               id="email">
+
+                    </div>
+
+
+
+                    <!-- PHONE -->
+
+                    <div class="register-row">
+
+                        <label>
+                            Phone Number:
+                        </label>
+
+
+                        <input type="text"
+                               id="phone">
+
+                    </div>
+
+
+
+                    <!-- SEX -->
+
+                    <div class="register-row">
+
+                        <label>
+                            Sex:
+                        </label>
+
+
+                        <div class="radio-group">
+
+                            <input type="radio"
+                                   name="sex"
+                                   value="Male">
+
+                            Male
+
+
+                            <input type="radio"
+                                   name="sex"
+                                   value="Female">
+
+                            Female
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- DATE OF BIRTH -->
+
+                    <div class="register-row">
+
+                        <label>
+                            Date of Birth:
+                        </label>
+
+
+                        <div class="dob">
+
+
+                            <select>
+
+                                <option>
+                                    Day
+                                </option>
+
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                                <option>11</option>
+                                <option>12</option>
+                                <option>13</option>
+                                <option>14</option>
+                                <option>15</option>
+                                <option>16</option>
+                                <option>17</option>
+                                <option>18</option>
+                                <option>19</option>
+                                <option>20</option>
+                                <option>21</option>
+                                <option>22</option>
+                                <option>23</option>
+                                <option>24</option>
+                                <option>25</option>
+                                <option>26</option>
+                                <option>27</option>
+                                <option>28</option>
+                                <option>29</option>
+                                <option>30</option>
+                                <option>31</option>
+
+                            </select>
+
+
+
+                            <select>
+
+                                <option>
+                                    Month
+                                </option>
+
+                                <option>January</option>
+                                <option>February</option>
+                                <option>March</option>
+                                <option>April</option>
+                                <option>May</option>
+                                <option>June</option>
+                                <option>July</option>
+                                <option>August</option>
+                                <option>September</option>
+                                <option>October</option>
+                                <option>November</option>
+                                <option>December</option>
+
+                            </select>
+
+
+
+                            <select>
+
+                                <option>
+                                    Year
+                                </option>
+
+                                <option>2000</option>
+                                <option>2001</option>
+                                <option>2002</option>
+                                <option>2003</option>
+                                <option>2004</option>
+                                <option>2005</option>
+                                <option>2006</option>
+                                <option>2007</option>
+                                <option>2008</option>
+                                <option>2009</option>
+                                <option>2010</option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- LANGUAGES -->
+
+                    <div class="register-row">
+
+                        <label>
+                            Languages Known:
+                        </label>
+
+
+                        <div class="language-group">
+
+                            <input type="checkbox">
+                            English
+
+
+                            <input type="checkbox">
+                            Telugu
+
+
+                            <input type="checkbox">
+                            Hindi
+
+
+                            <input type="checkbox">
+                            Tamil
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- ADDRESS -->
+
+                    <div class="register-row address-row">
+
+                        <label>
+                            Address:
+                        </label>
+
+
+                        <textarea
+                            rows="5"
+                            cols="30">
+                        </textarea>
+
+                    </div>
+
+
+
+                    <!-- BUTTONS -->
+
+                    <div class="register-buttons">
+
+                        <input type="submit"
+                               value="Register">
+
+
+                        <input type="reset"
+                               value="Reset">
+
+                    </div>
+
+                </form>
+
+            </div>
+
+
+
+            <!-- =========================
+                 CATALOGUE PAGE
+                 ========================= -->
+
+            <div id="catalogue"
+                 class="page">
+
+                <h2>
+                    Book Catalogue
+                </h2>
+
+
+                <table class="catalogue-table">
+
+
+                    <tr>
+
+                        <th>
+                            Cover Page
+                        </th>
+
+                        <th>
+                            Author Name
+                        </th>
+
+                        <th>
+                            Publisher
+                        </th>
+
+                        <th>
+                            Price
+                        </th>
+
+                        <th>
+                            Add to Cart
+                        </th>
+
+                    </tr>
+
+
+
+                    <!-- BOOK 1 -->
+
+                    <tr>
+
+
+                        <td>
+
+                            <div class="book book-one">
+
+                                <div class="book-title">
+
+                                    WEB DESIGN
+
+                                    <br>
+
+                                    HTML
+
+                                    <br>
+
+                                    CSS
+
+                                    <br>
+
+                                    JavaScript
+
+                                    <br>
+
+                                    jQuery
+
+                                </div>
+
+                            </div>
+
+                        </td>
+
+
+                        <td>
+                            Duckett, J.
+                        </td>
+
+
+                        <td>
+                            Wiley
+                        </td>
+
+
+                        <td>
+                            ₹650
+                        </td>
+
+
+                        <td>
+
+                            <button
+                                onclick="addToCart(
+                                'Web Design with HTML, CSS, JavaScript and JQuery Set',
+                                650)">
+
+                                Add to Cart
+
+                            </button>
+
+                        </td>
+
+
+                    </tr>
+
+
+
+                    <!-- BOOK 2 -->
+
+                    <tr>
+
+
+                        <td>
+
+                            <div class="book book-two">
+
+                                <div class="book-title">
+
+                                    START
+
+                                    <br>
+
+                                    PROGRAMMING
+
+                                    <br>
+
+                                    USING
+
+                                    <br>
+
+                                    HTML
+
+                                    <br>
+
+                                    CSS & JS
+
+                                </div>
+
+                            </div>
+
+                        </td>
+
+
+                        <td>
+                            Fajfar, I.
+                        </td>
+
+
+                        <td>
+                            CRC Press
+                        </td>
+
+
+                        <td>
+                            ₹550
+                        </td>
+
+
+                        <td>
+
+                            <button
+                                onclick="addToCart(
+                                'Start Programming Using HTML, CSS, and JavaScript',
+                                550)">
+
+                                Add to Cart
+
+                            </button>
+
+                        </td>
+
+
+                    </tr>
+
+
+                </table>
+
+            </div>
+
+
+
+            <!-- =========================
+                 CART PAGE
+                 ========================= -->
+
+            <div id="cart"
+                 class="page">
+
+                <h2>
+                    Shopping Cart
+                </h2>
+
+
+                <table class="cart-table">
+
+
+                    <tr>
+
+                        <th>
+                            Book Name
+                        </th>
+
+                        <th>
+                            Price
+                        </th>
+
+                        <th>
+                            Quantity
+                        </th>
+
+                        <th>
+                            Amount
+                        </th>
+
+                    </tr>
+
+
+                    <tbody id="cart-items">
+
+                        <tr>
+
+                            <td colspan="4">
+
+                                Cart is empty
+
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+
+                    <tr class="total-row">
+
+                        <td colspan="3">
+
+                            <b>
+                                Total Amount
+                            </b>
+
+                        </td>
+
+
+                        <td>
+
+                            <b id="total-amount">
+
+                                ₹0
+
+                            </b>
+
+                        </td>
+
+                    </tr>
+
+
+                </table>
+
+            </div>
+
+
+
+            <!-- =========================
+                 CSE
+                 ========================= -->
+
+            <div id="cse"
+                 class="page">
+
+                <h2>
+                    CSE Books
+                </h2>
+
+                <p>
+                    Computer Science and Engineering
+                    books are available in this category.
+                </p>
+
+            </div>
+
+
+
+            <!-- =========================
+                 ECE
+                 ========================= -->
+
+            <div id="ece"
+                 class="page">
+
+                <h2>
+                    ECE Books
+                </h2>
+
+                <p>
+                    Electronics and Communication
+                    Engineering books are available
+                    in this category.
+                </p>
+
+            </div>
+
+
+
+            <!-- =========================
+                 EEE
+                 ========================= -->
+
+            <div id="eee"
+                 class="page">
+
+                <h2>
+                    EEE Books
+                </h2>
+
+                <p>
+                    Electrical and Electronics
+                    Engineering books are available
+                    in this category.
+                </p>
+
+            </div>
+
+
+
+            <!-- =========================
+                 CIVIL
+                 ========================= -->
+
+            <div id="civil"
+                 class="page">
+
+                <h2>
+                    CIVIL Books
+                </h2>
+
+                <p>
+                    Civil Engineering books are
+                    available in this category.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =========================
+         JAVASCRIPT
+         ========================= -->
+
+    <script>
+
+
+        /* CART ARRAY */
+
+        let cart = [];
+
+
+
+        /* =========================
+           PAGE NAVIGATION
+           ========================= */
+
+        function showPage(pageId, clickedLink) {
+
+
+            event.preventDefault();
+
+
+            /* Hide all pages */
+
+            let pages =
+                document.querySelectorAll(".page");
+
+
+            pages.forEach(function(page) {
+
+                page.classList.remove(
+                    "active-page"
+                );
+
+            });
+
+
+            /* Show selected page */
+
+            document
+                .getElementById(pageId)
+                .classList.add("active-page");
+
+
+            /* Remove selected class */
+
+            let links =
+                document.querySelectorAll(
+                    ".nav-link, .department-link"
+                );
+
+
+            links.forEach(function(link) {
+
+                link.classList.remove(
+                    "selected"
+                );
+
+            });
+
+
+            /* Highlight selected link */
+
+            clickedLink.classList.add(
+                "selected"
+            );
+
+        }
+
+
+
+        /* =========================
+           REGISTRATION VALIDATION
+           ========================= */
+
+        function validateForm() {
+
+
+            let name =
+                document
+                .getElementById("name")
+                .value
+                .trim();
+
+
+            let password =
+                document
+                .getElementById("password")
+                .value;
+
+
+            let email =
+                document
+                .getElementById("email")
+                .value
+                .trim();
+
+
+            let phone =
+                document
+                .getElementById("phone")
+                .value
+                .trim();
+
+
+
+            /* =========================
+               1. NAME VALIDATION
+               ========================= */
+
+
+            let namePattern =
+                /^[A-Za-z ]+$/;
+
+
+            if (name.length < 6) {
+
+                alert(
+                    "Name should contain at least 6 characters."
+                );
+
+                return false;
+
+            }
+
+
+            if (!namePattern.test(name)) {
+
+                alert(
+                    "Name should contain only alphabets."
+                );
+
+                return false;
+
+            }
+
+
+
+            /* =========================
+               2. PASSWORD VALIDATION
+               ========================= */
+
+
+            if (password.length < 6) {
+
+                alert(
+                    "Password should contain at least 6 characters."
+                );
+
+                return false;
+
+            }
+
+
+
+            /* =========================
+               3. EMAIL VALIDATION
+               ========================= */
+
+
+            let emailPattern =
+                /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
+
+
+            if (!emailPattern.test(email)) {
+
+                alert(
+                    "Please enter a valid E-mail ID.\nExample: name@domain.com"
+                );
+
+                return false;
+
+            }
+
+
+
+            /* =========================
+               4. PHONE VALIDATION
+               ========================= */
+
+
+            let phonePattern =
+                /^[0-9]{10}$/;
+
+
+            if (!phonePattern.test(phone)) {
+
+                alert(
+                    "Phone Number should contain exactly 10 digits."
+                );
+
+                return false;
+
+            }
+
+
+
+            /* =========================
+               SUCCESS
+               ========================= */
+
+
+            alert(
+                "Registration successful!"
+            );
+
+
+            return false;
+
+        }
+
+
+
+        /* =========================
+           ADD BOOK TO CART
+           ========================= */
+
+        function addToCart(bookName, price) {
+
+
+            let existingBook =
+                cart.find(function(book) {
+
+                    return book.name === bookName;
+
+                });
+
+
+            if (existingBook) {
+
+                existingBook.quantity++;
+
+            }
+
+            else {
+
+                cart.push({
+
+                    name: bookName,
+
+                    price: price,
+
+                    quantity: 1
+
+                });
+
+            }
+
+
+            updateCart();
+
+
+            alert(
+                "Book added to cart."
+            );
+
+        }
+
+
+
+        /* =========================
+           UPDATE CART
+           ========================= */
+
+        function updateCart() {
+
+
+            let cartItems =
+                document.getElementById(
+                    "cart-items"
+                );
+
+
+            let totalAmount = 0;
+
+
+
+            /* Empty cart */
+
+            if (cart.length === 0) {
+
+
+                cartItems.innerHTML =
+
+                    "<tr>" +
+
+                    "<td colspan='4'>" +
+
+                    "Cart is empty" +
+
+                    "</td>" +
+
+                    "</tr>";
+
+
+                document
+                    .getElementById("total-amount")
+                    .innerText = "₹0";
+
+
+                return;
+
+            }
+
+
+
+            /* Clear old cart */
+
+            cartItems.innerHTML = "";
+
+
+
+            /* Add books */
+
+            cart.forEach(function(book) {
+
+
+                let amount =
+                    book.price *
+                    book.quantity;
+
+
+                totalAmount += amount;
+
+
+
+                let row =
+                    document.createElement("tr");
+
+
+                row.innerHTML =
+
+                    "<td>" +
+                    book.name +
+                    "</td>" +
+
+                    "<td>" +
+                    "₹" +
+                    book.price +
+                    "</td>" +
+
+                    "<td>" +
+                    book.quantity +
+                    "</td>" +
+
+                    "<td>" +
+                    "₹" +
+                    amount +
+                    "</td>";
+
+
+
+                cartItems.appendChild(row);
+
+            });
+
+
+
+            /* Display total */
+
+            document
+                .getElementById("total-amount")
+                .innerText =
+                "₹" + totalAmount;
+
+        }
+
+
+    </script>
+
+
+</body>
+
+</html>

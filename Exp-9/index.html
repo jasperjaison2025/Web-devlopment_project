@@ -398,129 +398,140 @@
         </div>
 
 
-        <!-- =================================
-             CATALOGUE PAGE
-             ================================= -->
+<!-- =================================
+     CATALOGUE PAGE
+     ================================= -->
+<div id="catalogue" class="page">
+    <h2>Book Catalogue</h2>
 
-        <div id="catalogue" class="page">
+    <h3 style="margin-top:20px; color:#116466;">CSE Books</h3>
+    <table class="catalogue-table">
+        <tr>
+            <th>Book</th>
+            <th>Author Name</th>
+            <th>Publisher</th>
+            <th>Price</th>
+            <th>Action</th>
+        </tr>
+        <tr>
+            <td>XML Bible</td>
+            <td>Winston</td>
+            <td>Wiley</td>
+            <td>₹450</td>
+            <td><button onclick="addToCart('XML Bible', 450)">Add to Cart</button></td>
+        </tr>
+        <tr>
+            <td>Artificial Intelligence</td>
+            <td>S. Russell</td>
+            <td>Pearson</td>
+            <td>₹650</td>
+            <td><button onclick="addToCart('Artificial Intelligence', 650)">Add to Cart</button></td>
+        </tr>
+        <tr>
+            <td>Java 2 Complete Reference</td>
+            <td>Herbert Schildt</td>
+            <td>McGraw Hill</td>
+            <td>₹550</td>
+            <td><button onclick="addToCart('Java 2 Complete Reference', 550)">Add to Cart</button></td>
+        </tr>
+    </table>
 
-            <h2>Book Catalogue</h2>
+    <h3 style="margin-top:25px; color:#116466;">ECE Books</h3>
+    <table class="catalogue-table">
+        <tr>
+            <th>Book</th>
+            <th>Author Name</th>
+            <th>Publisher</th>
+            <th>Price</th>
+            <th>Action</th>
+        </tr>
+        <tr>
+            <td>Digital Design</td>
+            <td>M. Morris Mano</td>
+            <td>Pearson</td>
+            <td>₹480</td>
+            <td><button onclick="addToCart('Digital Design', 480)">Add to Cart</button></td>
+        </tr>
+        <tr>
+            <td>Microelectronic Circuits</td>
+            <td>Sedra & Smith</td>
+            <td>Oxford</td>
+            <td>₹720</td>
+            <td><button onclick="addToCart('Microelectronic Circuits', 720)">Add to Cart</button></td>
+        </tr>
+        <tr>
+            <td>Signals and Systems</td>
+            <td>Oppenheim</td>
+            <td>PHI</td>
+            <td>₹580</td>
+            <td><button onclick="addToCart('Signals and Systems', 580)">Add to Cart</button></td>
+        </tr>
+    </table>
 
+    <h3 style="margin-top:25px; color:#116466;">EEE Books</h3>
+    <table class="catalogue-table">
+        <tr>
+            <th>Book</th>
+            <th>Author Name</th>
+            <th>Publisher</th>
+            <th>Price</th>
+            <th>Action</th>
+        </tr>
+        <tr>
+            <td>Electrical Machines</td>
+            <td>P. S. Bimbhra</td>
+            <td>Khanna Publishers</td>
+            <td>₹520</td>
+            <td><button onclick="addToCart('Electrical Machines', 520)">Add to Cart</button></td>
+        </tr>
+        <tr>
+            <td>Power System Analysis</td>
+            <td>Hadi Saadat</td>
+            <td>McGraw Hill</td>
+            <td>₹680</td>
+            <td><button onclick="addToCart('Power System Analysis', 680)">Add to Cart</button></td>
+        </tr>
+        <tr>
+            <td>Control Systems Engineering</td>
+            <td>Nagrath & Gopal</td>
+            <td>New Age</td>
+            <td>₹540</td>
+            <td><button onclick="addToCart('Control Systems Engineering', 540)">Add to Cart</button></td>
+        </tr>
+    </table>
 
-            <table class="catalogue-table">
-
-                <tr>
-
-                    <th>Book</th>
-
-                    <th>Author Name</th>
-
-                    <th>Publisher</th>
-
-                    <th>Price</th>
-
-                    <th>Action</th>
-
-                </tr>
-
-
-                <!-- BOOK 1 -->
-
-                <tr>
-
-                    <td>
-
-                        <div class="book book-one">
-
-                            <span class="book-title">
-                                HTML<br>
-                                CSS<br>
-                                JavaScript
-                            </span>
-
-                        </div>
-
-                    </td>
-
-
-                    <td>
-                        Duckett, J.
-                    </td>
-
-
-                    <td>
-                        Wiley
-                    </td>
-
-
-                    <td>
-                        ₹500
-                    </td>
-
-
-                    <td>
-
-                        <button onclick="addToCart(
-                            'Web Design with HTML, CSS, JavaScript and JQuery Set',
-                            500
-                        )">
-                            Add to Cart
-                        </button>
-
-                    </td>
-
-                </tr>
-
-
-                <!-- BOOK 2 -->
-
-                <tr>
-
-                    <td>
-
-                        <div class="book book-two">
-
-                            <span class="book-title">
-                                START<br>
-                                PROGRAMMING
-                            </span>
-
-                        </div>
-
-                    </td>
-
-
-                    <td>
-                        Fajfar, I.
-                    </td>
-
-
-                    <td>
-                        CRC Press
-                    </td>
-
-
-                    <td>
-                        ₹450
-                    </td>
-
-
-                    <td>
-
-                        <button onclick="addToCart(
-                            'Start Programming Using HTML, CSS, and JavaScript',
-                            450
-                        )">
-                            Add to Cart
-                        </button>
-
-                    </td>
-
-                </tr>
-
-            </table>
-
-        </div>
+    <h3 style="margin-top:25px; color:#116466;">CIVIL Books</h3>
+    <table class="catalogue-table">
+        <tr>
+            <th>Book</th>
+            <th>Author Name</th>
+            <th>Publisher</th>
+            <th>Price</th>
+            <th>Action</th>
+        </tr>
+        <tr>
+            <td>Strength of Materials</td>
+            <td>R. K. Bansal</td>
+            <td>Laxmi Publications</td>
+            <td>₹420</td>
+            <td><button onclick="addToCart('Strength of Materials', 420)">Add to Cart</button></td>
+        </tr>
+        <tr>
+            <td>Surveying Vol. 1</td>
+            <td>B. C. Punmia</td>
+            <td>Laxmi Publications</td>
+            <td>₹390</td>
+            <td><button onclick="addToCart('Surveying Vol. 1', 390)">Add to Cart</button></td>
+        </tr>
+        <tr>
+            <td>Concrete Technology</td>
+            <td>M. S. Shetty</td>
+            <td>S. Chand</td>
+            <td>₹550</td>
+            <td><button onclick="addToCart('Concrete Technology', 550)">Add to Cart</button></td>
+        </tr>
+    </table>
+</div>
 
 
         <!-- =================================
@@ -591,68 +602,155 @@
              CSE PAGE
              ================================= -->
 
-        <div id="cse" class="page">
-
-            <h2>CSE Books</h2>
-
-            <p>
-                Books related to Computer Science and
-                Engineering are available here.
-            </p>
-
-        </div>
+<div id="cse" class="page">
+    <h2>CSE Books</h2>
+    <table class="catalogue-table">
+        <tr>
+            <th>Book</th>
+            <th>Author Name</th>
+            <th>Publisher</th>
+            <th>Price</th>
+            <th>Action</th>
+        </tr>
+        <tr>
+            <td>XML Bible</td>
+            <td>Winston</td>
+            <td>Wiley</td>
+            <td>₹450</td>
+            <td><button onclick="addToCart('XML Bible', 450)">Add to Cart</button></td>
+        </tr>
+        <tr>
+            <td>Artificial Intelligence</td>
+            <td>S. Russell</td>
+            <td>Pearson</td>
+            <td>₹650</td>
+            <td><button onclick="addToCart('Artificial Intelligence', 650)">Add to Cart</button></td>
+        </tr>
+        <tr>
+            <td>Java 2 Complete Reference</td>
+            <td>Herbert Schildt</td>
+            <td>McGraw Hill</td>
+            <td>₹550</td>
+            <td><button onclick="addToCart('Java 2 Complete Reference', 550)">Add to Cart</button></td>
+        </tr>
+    </table>
+</div>
 
 
         <!-- =================================
              ECE PAGE
              ================================= -->
 
-        <div id="ece" class="page">
-
-            <h2>ECE Books</h2>
-
-            <p>
-                Books related to Electronics and
-                Communication Engineering are available here.
-            </p>
-
-        </div>
+<div id="ece" class="page">
+    <h2>ECE Books</h2>
+    <table class="catalogue-table">
+        <tr>
+            <th>Book</th>
+            <th>Author Name</th>
+            <th>Publisher</th>
+            <th>Price</th>
+            <th>Action</th>
+        </tr>
+        <tr>
+            <td>Digital Design</td>
+            <td>M. Morris Mano</td>
+            <td>Pearson</td>
+            <td>₹480</td>
+            <td><button onclick="addToCart('Digital Design', 480)">Add to Cart</button></td>
+        </tr>
+        <tr>
+            <td>Microelectronic Circuits</td>
+            <td>Sedra & Smith</td>
+            <td>Oxford</td>
+            <td>₹720</td>
+            <td><button onclick="addToCart('Microelectronic Circuits', 720)">Add to Cart</button></td>
+        </tr>
+        <tr>
+            <td>Signals and Systems</td>
+            <td>Oppenheim</td>
+            <td>PHI</td>
+            <td>₹580</td>
+            <td><button onclick="addToCart('Signals and Systems', 580)">Add to Cart</button></td>
+        </tr>
+    </table>
+</div>
 
 
         <!-- =================================
              EEE PAGE
              ================================= -->
 
-        <div id="eee" class="page">
-
-            <h2>EEE Books</h2>
-
-            <p>
-                Books related to Electrical and
-                Electronics Engineering are available here.
-            </p>
-
-        </div>
+<div id="eee" class="page">
+    <h2>EEE Books</h2>
+    <table class="catalogue-table">
+        <tr>
+            <th>Book</th>
+            <th>Author Name</th>
+            <th>Publisher</th>
+            <th>Price</th>
+            <th>Action</th>
+        </tr>
+        <tr>
+            <td>Electrical Machines</td>
+            <td>P. S. Bimbhra</td>
+            <td>Khanna Publishers</td>
+            <td>₹520</td>
+            <td><button onclick="addToCart('Electrical Machines', 520)">Add to Cart</button></td>
+        </tr>
+        <tr>
+            <td>Power System Analysis</td>
+            <td>Hadi Saadat</td>
+            <td>McGraw Hill</td>
+            <td>₹680</td>
+            <td><button onclick="addToCart('Power System Analysis', 680)">Add to Cart</button></td>
+        </tr>
+        <tr>
+            <td>Control Systems Engineering</td>
+            <td>Nagrath & Gopal</td>
+            <td>New Age</td>
+            <td>₹540</td>
+            <td><button onclick="addToCart('Control Systems Engineering', 540)">Add to Cart</button></td>
+        </tr>
+    </table>
+</div>
 
 
         <!-- =================================
              CIVIL PAGE
              ================================= -->
 
-        <div id="civil" class="page">
-
-            <h2>CIVIL Books</h2>
-
-            <p>
-                Books related to Civil Engineering
-                are available here.
-            </p>
-
-        </div>
-
-
-    </div>
-
+<div id="civil" class="page">
+    <h2>CIVIL Books</h2>
+    <table class="catalogue-table">
+        <tr>
+            <th>Book</th>
+            <th>Author Name</th>
+            <th>Publisher</th>
+            <th>Price</th>
+            <th>Action</th>
+        </tr>
+        <tr>
+            <td>Strength of Materials</td>
+            <td>R. K. Bansal</td>
+            <td>Laxmi Publications</td>
+            <td>₹420</td>
+            <td><button onclick="addToCart('Strength of Materials', 420)">Add to Cart</button></td>
+        </tr>
+        <tr>
+            <td>Surveying Vol. 1</td>
+            <td>B. C. Punmia</td>
+            <td>Laxmi Publications</td>
+            <td>₹390</td>
+            <td><button onclick="addToCart('Surveying Vol. 1', 390)">Add to Cart</button></td>
+        </tr>
+        <tr>
+            <td>Concrete Technology</td>
+            <td>M. S. Shetty</td>
+            <td>S. Chand</td>
+            <td>₹550</td>
+            <td><button onclick="addToCart('Concrete Technology', 550)">Add to Cart</button></td>
+        </tr>
+    </table>
 </div>
 
 

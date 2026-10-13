@@ -941,3 +941,27 @@ body {
 .book-brown  { background: linear-gradient(135deg, #8d6e63, #6d4c41); }
 .book-cyan   { background: linear-gradient(135deg, #00bcd4, #0097a7); }
 .book-lime   { background: linear-gradient(135deg, #c0ca33, #9e9d24); }
+
+
+/* =========================================
+   BOTTOM BAR
+   ========================================= */
+.bottom-bar {
+    width: 100%;
+    height: 32px;
+    background-color: #4f6d7a;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #555555;
+    box-sizing: border-box;
+    letter-spacing: 0.3px;
+}
+
+/* so content is not hidden behind the bar */
+body {
+    padding-bottom: 32px;
+}

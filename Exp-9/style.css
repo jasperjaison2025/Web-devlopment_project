@@ -30,7 +30,7 @@ body {
    LOGO
    ========================================= */
 .logo {
-    width: 140px;
+    width: 90px;
     height: 70px;
     display: flex;
     align-items: center;
